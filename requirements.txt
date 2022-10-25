@@ -2,5 +2,5 @@ pylint
 pytest
 Flask
 pandas
-scikit-learn==0.21
+scikit-learn==0.21.3
 joblib
