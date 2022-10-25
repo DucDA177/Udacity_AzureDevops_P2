@@ -1,5 +1,5 @@
 pylint
 pytest
-Flask==1.0.2
+Flask
 pandas
 scikit-learn
