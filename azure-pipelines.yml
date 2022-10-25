@@ -14,7 +14,7 @@ variables:
   webAppName: 'ducda-uda-azdevops'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-18.04'
+  vmImageName: 'ubuntu-latest'
 
   # Environment name
   environmentName: 'ducda-uda-azdevops'
@@ -22,8 +22,8 @@ variables:
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
 
-  # Python version: 3.7
-  pythonVersion: '3.7'
+  # Python version: 3.6
+  pythonVersion: '3.6'
 
 stages:
 - stage: Build
