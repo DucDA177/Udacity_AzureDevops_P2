@@ -1,6 +1,7 @@
-Flask
-pandas
-scikit-learn
-joblib
 pylint
 pytest
+numpy==1.16
+Flask
+pandas==0.24.2
+scikit-learn==0.20.3
+Cython

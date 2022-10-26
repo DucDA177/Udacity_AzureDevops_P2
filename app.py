@@ -3,9 +3,10 @@ from flask.logging import create_logger
 import logging
 
 import pandas as pd
-import joblib
+
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.externals import joblib
+
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -21,7 +22,7 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = "<h2> Sklearn Prediction Home APP - REST API</h2>"    
+    html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
 # TO DO:  Log out the prediction value
@@ -54,10 +55,9 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except Exception as e:
-        LOG.error(e)
+    except ValueError:
         LOG.info("JSON payload: %s json_payload")
-        return e
+        return "Model not loaded"
 
     json_payload = request.json
     LOG.info("JSON payload: %s json_payload")
@@ -68,4 +68,5 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # app.run(host='0.0.0.0', port=5000, debug=True)
+    joblib.load("./boston_housing_prediction.joblib")
