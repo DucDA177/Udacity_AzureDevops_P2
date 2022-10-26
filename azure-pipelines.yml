@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: 'eedf2f66-63fb-4773-a24f-09fa50332779'
 
   # Web app name
-  webAppName: 'ducda-uda-azdevops'
+  webAppName: 'uda-azdevops-p2'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'ducda-uda-azdevops'
+  environmentName: 'uda-azdevops-p2'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -88,7 +88,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : ducda-uda-azdevops'
+            displayName: 'Deploy Azure Web App : uda-azdevops-p2'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
