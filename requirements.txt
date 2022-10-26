@@ -1,6 +1,5 @@
 pylint
 pytest
-gfortran
 libatlas-base-dev
 numpy==1.16.1
 Flask
