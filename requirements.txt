@@ -1,6 +1,6 @@
 pylint
 pytest
-numpy==1.8.2
+numpy==1.16.1
 scipy==0.13.3
 Flask
 pandas==0.24.2
