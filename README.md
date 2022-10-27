@@ -1,6 +1,10 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+Building a CI/CD Pipeline in Udacity Cloud DevOps using Microsoft Azure course
+
+[![Python application test with Github Actions](https://github.com/DucDA177/Udacity_AzureDevops_P2/actions/workflows/main.yml/badge.svg)](https://github.com/DucDA177/Udacity_AzureDevops_P2/actions/workflows/main.yml)
+
+[![Build Status](https://dev.azure.com/duongduc199817/Uda_AzDevops_P2/_apis/build/status/DucDA177.Udacity_AzureDevops_P2?branchName=main)](https://dev.azure.com/duongduc199817/Uda_AzDevops_P2/_build/latest?definitionId=4&branchName=main)
 
 ## Project Plan
 <TODO: Project Plan
@@ -61,6 +65,16 @@ Port: 443
 </p>
 
 > 
+
+* Locust load testing chart
+<p>
+<img src="./images/locust chart.JPG" width="100%" />
+</p>
+
+* Locust load testing statics
+<p>
+<img src="./images/locust report.JPG" width="100%" />
+</p>
 
 ## Enhancements
 
